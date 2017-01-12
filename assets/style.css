@@ -1,0 +1,61 @@
+.jumbotron {
+	background-image: url("../assets/images/sw-banner-1.jpeg");
+	background-position: center; 
+	margin-bottom: 0px;
+	border-radius: 0px !important; 
+}
+
+.jumbotron h2 {
+	text-align: center;
+}
+
+.navbar {
+	border-radius: 0px;
+	margin-bottom: 40px;
+}
+
+.navbar-inverse .navbar-nav .active > a, .navbar-inverse .navbar-nav .active a:hover, .navbar-inverse .navbar-nav .active a:focus{
+	background-color: #222222;
+	color: #00bc8c;
+}
+
+.navbar-inverse {
+	background-color: #464545;
+}
+
+#logo {
+	text-align: center;
+}
+
+.form-horizontal .form-group {
+	margin: 25px 0 25px 0;
+}
+
+/*.form-control, input, textarea {
+	font-size: 13px;
+}*/
+
+.form-horizontal {
+	background-color: #464545;
+	margin-bottom: 25px;
+}
+
+.table {
+	margin-bottom: 40px;
+}
+
+th {
+	color: #00bc8c;
+}
+
+fieldset {
+	padding: 0px 25px 25px 25px;
+}
+
+legend {
+	text-align: center;
+	font-size: 2.25em;
+	color: #00bc8c;
+	padding: 15px 0 0 0;
+	margin-bottom: 0px;
+}
