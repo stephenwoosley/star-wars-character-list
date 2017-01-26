@@ -16,3 +16,6 @@ Star Wars character entry form and list of entered characters.
 2. Save a few records to database successfully
 3. Display those results on the page
 4. Get Authentication working
+5. Tags vs specific fields (controlling specificity)
+
+Categories      Most Popular Characters(20)     Featured/Recently Added    

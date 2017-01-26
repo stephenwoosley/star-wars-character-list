@@ -1,31 +1,89 @@
-.jumbotron {
+
+/* ----------- HEADER CSS ----------- */
+.header {
 	background-image: url("../assets/images/sw-banner-1.jpeg");
-	background-position: center; 
-	margin-bottom: 0px;
-	border-radius: 0px !important; 
+	background-position: center;
+	width: 100%;
+	height: 295px;
 }
-
-.jumbotron h2 {
-	text-align: center;
-}
-
-.navbar {
-	border-radius: 0px;
-	margin-bottom: 40px;
-}
-
-.navbar-inverse .navbar-nav .active > a, .navbar-inverse .navbar-nav .active a:hover, .navbar-inverse .navbar-nav .active a:focus{
-	background-color: #222222;
-	color: #00bc8c;
-}
-
-.navbar-inverse {
-	background-color: #464545;
-}
-
 #logo {
+	/*padding: 0 0 35px 0;*/
 	text-align: center;
 }
+#add-character-div {
+	padding-top: 25px;
+	text-align: center;
+}
+nav {
+	background-color: #26a69a;
+	margin: 10px 5px 0 0;
+}
+
+/* ----------- Fix Search Bar Height ----------- */
+nav {
+    height: 45px;
+    line-height: 45px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height: 45px;
+    line-height: 45px;
+}
+
+nav .button-collapse i {
+    height: 45px;
+    line-height: 45px;
+}
+
+nav .brand-logo {
+    font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 45px;
+        line-height: 45px;
+    }
+}
+
+/* ----------- BODY CSS ----------- */
+
+body {
+	background-color: #151515;
+}
+
+#layout-headers {
+	color: #ffffff;
+	text-align: center;
+}
+
+.card {
+	background-color: #3A3A3A; /*was 151515*/
+	color: #ffffff;
+}
+.card .card-content {
+	padding-bottom: 12px;
+}
+.card .row {
+	margin-bottom: 0;
+}
+.chip {
+	background-color: #00bc8c;
+	color: inherit;
+	margin-top: 7.5px;
+}
+.chip-collection {
+	text-align: center;
+}
+.char-attr-title {
+	text-transform: uppercase;
+	padding-right: 7.5px;
+	color: #ffab40;
+}
+table {
+	margin-top: 10px;
+}
+
 
 .form-horizontal .form-group {
 	margin: 25px 0 25px 0;
@@ -40,18 +98,6 @@
 	margin-bottom: 25px;
 }
 
-.table {
-	margin-bottom: 40px;
-}
-
-th {
-	color: #00bc8c;
-}
-
-fieldset {
-	padding: 0px 25px 25px 25px;
-}
-
 legend {
 	text-align: center;
 	font-size: 2.25em;
@@ -59,3 +105,8 @@ legend {
 	padding: 15px 0 0 0;
 	margin-bottom: 0px;
 }
+
+/*#character-list-well, #category-well, #featured-well{
+	margin: 0 5px 0 5px;
+
+}*/
