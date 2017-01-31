@@ -9,13 +9,15 @@ Star Wars character entry form and list of entered characters.
 
 ### Steps to Achieve Goals
 
-1. Determine fields to have entered
-1. Determine general layout
-1. Determine how characters will be displayed on page
-1. Create database
-2. Save a few records to database successfully
-3. Display those results on the page
+1. Get cards to show up dynamically based on form submission
+    * Capture form data and console.log
+    * Plug in form data to dynamically created card w/ jquery
+1. Create firebase database
+2. Populate cards on page with database records
+3. Create filters based on character properties
+4. Ensure page does not load all records at once
 4. Get Authentication working
+5. Add character favorites (star character)
 5. Tags vs specific fields (controlling specificity)
 
 Categories      Most Popular Characters(20)     Featured/Recently Added    
