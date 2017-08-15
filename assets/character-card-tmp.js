@@ -29,9 +29,9 @@ $("#submit-modal-form").on("click", function(event){
             <img class='circle responsive-img valign' src='" + newCharacter.charImage + "'>\
           </div>\
           <div class='col s6'>\
-              <h4 class='valign'>"+ newCharacter.charName +"</h4>\
+              <h4 class='valign' id='charName'>"+ newCharacter.charName +"</h4>\
           </div>\
-          <div class='col s3'>\
+          <div id='stat-holder' class='col s3'>\
             <table class='valign'>\
               <tbody class='stat-table'>\
                 <tr>\

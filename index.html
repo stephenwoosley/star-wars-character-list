@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Star Wars Characters</title>
 	<link rel="shortcut icon" type="image/png" href="http://res.cloudinary.com/stephenrwoosley/image/upload/c_scale,w_32/v1484193797/vader-mask_ulbus7.png"/>
 	<!-- <link rel="stylesheet" href="assets/bootstrap.css"> -->
@@ -18,7 +19,7 @@
 <body>
 		<div class="header">
 			<div class="row">
-				<div class="col s3 offset-s9">
+				<div class="col l3 m4 s12 offset-l9 offset-m8">
 					<nav>
 						<div class="nav-wrapper">
 								<form>
@@ -49,14 +50,14 @@
 					<div class="row">
 				    <form class="col s12">
 							<div class="row">
-								<div class="input-field col s6 offset-s3">
+								<div class="input-field col s10 l6 offset-s1 offset-l3">
 									<input id="char_name" type="text" class="validate">
 			          	<label for="character_name">Character Name</label>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col s1"></div>
-								<div class="input-field col s5">
+								<div class="col l1 s12"></div>
+								<div class="input-field col l5 s10 offset-s1">
 							    <select id="char_affiliation">
 							      <option value="" disabled selected>Choose affiliation</option>
 										<option value="Light Side">Light Side || Republic</option>
@@ -67,7 +68,7 @@
 							    </select>
 							    <!-- <label>Select Affiliation</label> -->
 						  	</div>
-								<div class="input-field col s5">
+								<div class="input-field col l5 s10 offset-s1">
 							    <select id="char_category">
 							      <option value="" disabled selected>Choose category</option>
 										<option value="jedi">Jedi</option>
@@ -101,13 +102,13 @@
 
 							</div>
 							<div class="row">
-								<div class="input-field col s6 offset-s3">
+								<div class="input-field col s10 l6 offset-s1 offset-l3">
 									<input id="char_location" type="text" class="validate">
 			          	<label for="character_name">Location or Home Planet</label>
 								</div>
 							</div>
 							<div class="row">
-								<div class="input-field col s6 offset-s3">
+								<div class="input-field col s10 l6 offset-s1 offset-l3">
 									<input id="char_image" type="text" class="validate">
 			          	<label for="character_name">Image URL</label>
 								</div>
@@ -129,20 +130,20 @@
 				<!-- <div class="col s2">
 					<h4>Categories</h4>
 				</div> -->
-				<div class="col s7">
+				<div class="col s10">
 					<h4 id="characters-title">Characters</h4>
 				</div>
-				<div class="col s3">
+				<!-- <div class="col s3">
 					<h4>Featured</h4>
-				</div>
+				</div> -->
 				<div class="col s1"></div>
 			</div>
 
 			<div class="row">
 				<div class="col s1"></div>
 				<!-- <div class="col s2" id="category-well"></div> -->
-				<div class="col s7" id="character-list-well"></div>
-				<div class="col s3" id="featured-well"></div>
+				<div class="col s10" id="character-list-well"></div>
+				<!-- <div class="col s3" id="featured-well"></div> -->
 				<div class="row">
 					<div class="col s1"></div>
 				</div>
