@@ -50,25 +50,25 @@
 				    <form class="col s12">
 							<div class="row">
 								<div class="input-field col s6 offset-s3">
-									<input id="character_name" type="text" class="validate">
+									<input id="char_name" type="text" class="validate">
 			          	<label for="character_name">Character Name</label>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col s1"></div>
 								<div class="input-field col s5">
-							    <select>
+							    <select id="char_affiliation">
 							      <option value="" disabled selected>Choose affiliation</option>
-										<option value="light-side-republic">Light Side || Republic</option>
-										<option value="light-side-resistance">Light Side || Resistance</option>
-										<option value="dark-side-empire">Dark Side || Empire</option>
-										<option value="dark-side-first-order">Dark Side || First Order</option>
-										<option value="unafilliated">Unafilliated</option>
+										<option value="Light Side">Light Side || Republic</option>
+										<option value="Light Side">Light Side || Resistance</option>
+										<option value="Dark Side">Dark Side || Empire</option>
+										<option value="Dark Side">Dark Side || First Order</option>
+										<option value="Unafilliated">Unafilliated</option>
 							    </select>
 							    <!-- <label>Select Affiliation</label> -->
 						  	</div>
 								<div class="input-field col s5">
-							    <select>
+							    <select id="char_category">
 							      <option value="" disabled selected>Choose category</option>
 										<option value="jedi">Jedi</option>
 										<option value="droid">Droid</option>
@@ -76,7 +76,6 @@
 										<option value="dark-side-first-order">Dark Side || First Order</option>
 										<option value="unafilliated">Unafilliated</option>
 							    </select>
-							    <!-- <label>Select Category</label> -->
 						  	</div>
 								<div class="col s1"></div>
 							</div>
@@ -85,15 +84,15 @@
 								<div class="col s10">
 									<div class="row">
 										<div class="input-field col s4">
-											<input id="hp" type="number" class="validate">
+											<input id="char_hp" type="number" class="validate">
 											<label for="character_name">HP</label>
 										</div>
 										<div class="input-field col s4">
-											<input id="attack" type="number" class="validate">
+											<input id="char_attack" type="number" class="validate">
 											<label for="character_name">Attack</label>
 										</div>
 										<div class="input-field col s4">
-											<input id="speed" type="number" class="validate">
+											<input id="char_speed" type="number" class="validate">
 											<label for="character_name">Speed</label>
 										</div>
 									</div>
@@ -102,34 +101,20 @@
 
 							</div>
 							<div class="row">
-								<div class="col s1"></div>
-								<div class="input-field col s5">
-							    <select>
-							      <option value="" disabled selected>Choose affiliation</option>
-										<option value="light-side-republic">Light Side || Republic</option>
-										<option value="light-side-resistance">Light Side || Resistance</option>
-										<option value="dark-side-empire">Dark Side || Empire</option>
-										<option value="dark-side-first-order">Dark Side || First Order</option>
-										<option value="unafilliated">Unafilliated</option>
-							    </select>
-							    <!-- <label>Select Affiliation</label> -->
-						  	</div>
-								<div class="input-field col s5">
-							    <select>
-							      <option value="" disabled selected>Choose category</option>
-										<option value="jedi">Jedi</option>
-										<option value="droid">Droid</option>
-										<option value="dark-side-empire">Dark Side || Empire</option>
-										<option value="dark-side-first-order">Dark Side || First Order</option>
-										<option value="unafilliated">Unafilliated</option>
-							    </select>
-							    <!-- <label>Select Category</label> -->
-						  	</div>
-								<div class="col s1"></div>
+								<div class="input-field col s6 offset-s3">
+									<input id="char_location" type="text" class="validate">
+			          	<label for="character_name">Location or Home Planet</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s6 offset-s3">
+									<input id="char_image" type="text" class="validate">
+			          	<label for="character_name">Image URL</label>
+								</div>
 							</div>
 							<div class="row">
 								<div class="button-center">
-									<button class="btn waves-effect waves-light" type="submit" name="action">Add
+									<button id="submit-modal-form" class="btn waves-effect waves-light" type="submit" name="action">Add
 	    							<i class="material-icons right">playlist_add</i>
 	  							</button>
 								</div>
@@ -161,332 +146,18 @@
 				<div class="row">
 					<div class="col s1"></div>
 				</div>
-
-			</div>
-			<!-- <div class="row">
-		    <form class="col s12">
-					<div class="row">
-						<div class="input-field col s6 offset-s3">
-							<input id="character_name" type="text" class="validate">
-	          	<label for="character_name">Character Name</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col s1"></div>
-						<div class="input-field col s5">
-					    <select>
-					      <option value="" disabled selected>Choose affiliation</option>
-								<option value="light-side-republic">Light Side || Republic</option>
-								<option value="light-side-resistance">Light Side || Resistance</option>
-								<option value="dark-side-empire">Dark Side || Empire</option>
-								<option value="dark-side-first-order">Dark Side || First Order</option>
-								<option value="unafilliated">Unafilliated</option>
-					    </select>
-					    <label>Select Affiliation</label> -->
-				  	<!-- </div>
-						<div class="input-field col s5"> -->
-					    <!-- <select>
-					      <option value="" disabled selected>Choose category</option>
-								<option value="jedi">Jedi</option>
-								<option value="droid">Droid</option>
-								<option value="dark-side-empire">Dark Side || Empire</option>
-								<option value="dark-side-first-order">Dark Side || First Order</option>
-								<option value="unafilliated">Unafilliated</option>
-								<option>Jedi</option>
-								<option>Droid</option>
-								<option>Wookie</option>
-								<option>Ewok</option>
-								<option>Sith</option>
-					    </select> -->
-					    <!-- <label>Select Category</label> -->
-				  	<!-- </div>
-						<div class="col s1"></div>
-					</div>
-					<div class="row">
-						<div class="col s1"></div>
-						<div class="col s10">
-							<div class="row">
-								<div class="input-field col s4">
-									<input id="hp" type="number" class="validate">
-									<label for="character_name">HP</label>
-								</div>
-								<div class="input-field col s4">
-									<input id="attack" type="number" class="validate">
-									<label for="character_name">Attack</label>
-								</div>
-								<div class="input-field col s4">
-									<input id="speed" type="number" class="validate">
-									<label for="character_name">Speed</label>
-								</div>
-							</div>
-						</div>
-						<div class="col s1"></div>
-
-					</div>
-					<div class="row">
-						<div class="col s1"></div>
-						<div class="input-field col s5">
-					    <select>
-					      <option value="" disabled selected>Choose affiliation</option>
-								<option value="light-side-republic">Light Side || Republic</option>
-								<option value="light-side-resistance">Light Side || Resistance</option>
-								<option value="dark-side-empire">Dark Side || Empire</option>
-								<option value="dark-side-first-order">Dark Side || First Order</option>
-								<option value="unafilliated">Unafilliated</option>
-					    </select> -->
-					    <!-- <label>Select Affiliation</label> -->
-				  	<!-- </div>
-						<div class="input-field col s5">
-					    <select>
-					      <option value="" disabled selected>Choose category</option>
-								<option value="jedi">Jedi</option>
-								<option value="droid">Droid</option>
-								<option value="dark-side-empire">Dark Side || Empire</option>
-								<option value="dark-side-first-order">Dark Side || First Order</option>
-								<option value="unafilliated">Unafilliated</option>
-								<option>Jedi</option>
-								<option>Droid</option>
-								<option>Wookie</option>
-								<option>Ewok</option>
-								<option>Sith</option>
-					    </select> -->
-					    <!-- <label>Select Category</label> -->
-				  	<!-- </div>
-						<div class="col s1"></div>
-					</div>
-				</form>
-			</div>
-		      <div class='card horizontal'>
-		        <div class='card-stacked'>
-		          <div class='card-content'>
-								<div class="row">
-									<div class="col s2 valign-wrapper">
-										<img class="circle responsive-img valign" src="assets/images/vader-image.jpeg">
-									</div>
-									<div class="col s10">
-										<div class="valign-wrapper">
-					            <h4 class="valign">Darth Vader</h4>
-										</div>
-										<table>
-							        <tbody>
-							          <tr>
-							            <td><span class="char-attr-title">Affiliation: </span> Dark Side</td>
-													<td><span class="char-attr-title">Category: </span> Sith</td>
-													<td><span class="char-attr-title">Location: </span> Death Star</td>
-							          </tr>
-							          <tr>
-													<td><span class="char-attr-title">Weapon: </span> Red Light Saber</td>
-													<td><span class="char-attr-title">Hit Points: </span> 950</td>
-													<td><span class="char-attr-title">Attack Power: </span> 55</td>
-							          </tr>
-							        </tbody>
-							      </table>
-									</div>
-								</div>
-		          </div>
-		        </div>
-		      </div> -->
-
+			</div> <!-- end row -->
 		</div> <!-- end container -->
 
-
-
-		<!-- <table class="table table-striped table-hover" id="character-table">
-		  <thead>
-		    <tr>
-		      <th>#</th>
-		      <th>Character Name</th>
-		      <th>Role</th>
-		      <th>Start Date</th>
-		      <th>Months Worked</th>
-		      <th>Monthly Rate ($)</th>
-		      <th>Total Billed ($)</th>
-		    </tr>
-		  </thead>
-		  <tbody>
-		    <tr>
-		      <td>1</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		    </tr>
-		    <tr>
-		      <td>2</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		    </tr>
-		    <tr >
-		      <td>3</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		    </tr>
-		    <tr >
-		      <td>4</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		    </tr>
-		    <tr >
-		      <td>5</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		    </tr>
-		    <tr >
-		      <td>6</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		    </tr>
-		    <tr >
-		      <td>7</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		      <td>Column content</td>
-		    </tr>
-		  </tbody>
-		</table> -->
-
-
-
-
-		<!-- <form class="form-horizontal" id="enter-new">
-		  <fieldset>
-		    <legend>New Character Entry</legend>
-		    <div class="form-group">
-		    	<div class="row">
-		    		<div class="col-lg-1"></div>
-			    	<div class="col-lg-10">
-			    		<div class="form-group">
-			    			<div class="col-lg-9">
-			    				<input type="text" class="form-control" id="inputName" placeholder="Character Name" autocomplete="off">
-			    			</div>
-		    			</div>
-		    			<div class="form-group">
-					      <label for="select" class="col-lg-2 control-label">Affiliation</label>
-					      <div class="col-lg-4">
-					        <select class="form-control" id="selectAffiliation">
-					          <option>Light Side || Republic</option>
-					          <option>Light Side || Resistance</option>
-					          <option>Dark Side || Empire</option>
-					          <option>Dark Side || First Order</option>
-					          <option>Unafilliated</option>
-					        </select>
-				          </div>
-					        <label for="select" class="col-lg-2 control-label">Catgory</label>
-					      <div class="col-lg-4">
-					        <select class="form-control" id="selectCategory">
-					          <option>Jedi</option>
-					          <option>Droid</option>
-					          <option>Wookie</option>
-					          <option>Ewok</option>
-					          <option>Sith</option>
-					        </select>
-					      </div>
-					    </div>
-				        <div class="form-group">
-					      <label for="select" class="col-lg-2 control-label">Location</label>
-					      <div class="col-lg-4">
-					        <select class="form-control" id="selectLocation">
-					          <option>Endor</option>
-					          <option>Planet</option>
-					          <option>Moon</option>
-					          <option>Ship</option>
-					          <option>Galaxy</option>
-					        </select>
-				          </div>
-					        <label for="select" class="col-lg-2 control-label">Weapon</label>
-					      <div class="col-lg-4">
-					        <select class="form-control" id="selectAffiliation">
-					          <option>Light Saber</option>
-					          <option>The Force</option>
-					          <option>Blaster</option>
-					          <option>Strategy</option>
-					          <option>Vehicle</option>
-					          <option>Physical Maiming</option>
-					        </select>
-					      </div>
-				        </div>
-				        <div class="form-group">
-				        	<label for="select" class="col-lg-2 control-label">Hit Points</label>
-				        	<div class="col-lg-2">
-				        		<input class="form-control" type="number" value="0" id="hit-points">
-			        		</div>
-				        	<label for="select" class="col-lg-2 control-label">Attack Power</label>
-				        	<div class="col-lg-2">
-				        		<input class="form-control" type="number" value="0" id="attack-power">
-			        		</div>
-				        	<label for="select" class="col-lg-2 control-label">Speed</label>
-				        	<div class="col-lg-2">
-				        		<input class="form-control" type="number" value="0" id="speed">
-				        	</div>
-				        </div>
-				        <div class="form-group">
-		    				<textarea type="text" class="form-control" id="inputDescription" placeholder="Character Description" autocomplete="off"></textarea>
-		    			</div>
-				    </div>
-				    <div class="col-lg-1"></div>
-		    	</div>
-
-	    	</div> -->
-		      <!-- <label for="inputName" class="col-lg-2 control-label">Character Name</label>
-		      <div class="col-lg-10">
-		        <input type="text" class="form-control" id="inputName" placeholder="Bill Character" autocomplete="off"> --> <!-- style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: pointer;"> -->
-		      <!-- </div>
-		    </div>
-		    <div class="form-group">
-		      <label for="inputRole" class="col-lg-2 control-label">Role</label>
-		      <div class="col-lg-10">
-		        <input type="text" class="form-control" id="inputRole" placeholder="Role" autocomplete="off"> --> <!-- style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;"> -->
-		      <!-- </div>
-		    </div>
-		    <div class="form-group">
-		      <label for="inputDate" class="col-lg-2 control-label">Start Date</label>
-		      <div class="col-lg-10">
-		        <input type="Date" class="form-control" id="inputDate" placeholder="01/01/2017" autocomplete="off"> --> <!-- style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;"> -->
-		     <!--  </div>
-		    </div>
-		    <div class="form-group">
-		      <label for="inputRate" class="col-lg-2 control-label">Monthly Rate</label>
-		      <div class="col-lg-10">
-		        <input type="text" class="form-control" id="inputRate" placeholder="5000" autocomplete="off" > -->
-		        <!-- style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;"
-		        > -->
-		      <!-- </div>
-		    </div> -->
-		    <!-- <div class="form-group">
-		      <div class="col-lg-10 col-lg-offset-2">
-		        <button type="reset" class="btn btn-default">Cancel</button>
-		        <button type="submit" class="btn btn-primary" id="submit-new">Submit</button>
-		      </div>
-		    </div>
-		  </fieldset>
-		</form> -->
-
 	<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-	<script src="assets/main.js"></script>
+	<script src="assets/character-card-tmp.js"></script>
+	<script>
+
+		$(document).ready(function() {
+			$('.modal').modal();
+		  $('select').material_select();
+		})
+
+	</script>
 </body>
 </html>
