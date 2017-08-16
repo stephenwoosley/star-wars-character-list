@@ -16,8 +16,17 @@ Star Wars character entry form and list of entered characters.
 2. Populate cards on page with database records
 3. Create filters based on character properties
 4. Ensure page does not load all records at once
-4. Get Authentication working
-5. Add character favorites (star character)
-5. Tags vs specific fields (controlling specificity)
+5. Get Authentication working
+6. Add character favorites (star character)
+7. Tags vs specific fields (controlling specificity)
 
 Categories      Most Popular Characters(20)     Featured/Recently Added    
+
+### New ToDos
+
+1. Create handlebars layout with index & partials
+2. Start on SQL or Mongo db or firebase
+3. Set up Express routes
+4. Tie it all together
+5. Implement Search Feature
+6. Import Star Wars Databank data
