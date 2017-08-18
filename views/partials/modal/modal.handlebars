@@ -1,0 +1,82 @@
+<div class="modal" id="modal1">
+				<div class="modal-content">
+					<div class="row">
+						<h3 class="modal-title">Add Character</h3>
+					</div>
+					<div class="row">
+				    <form class="col s12">
+							<div class="row">
+								<div class="input-field col s10 l6 offset-s1 offset-l3">
+									<input id="char_name" type="text" class="validate">
+			          	<label for="character_name">Character Name</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col l1 s12"></div>
+								<div class="input-field col l5 s10 offset-s1">
+							    <select id="char_affiliation">
+							      <option value="" disabled selected>Choose affiliation</option>
+										<option value="Light Side">Light Side || Republic</option>
+										<option value="Light Side">Light Side || Resistance</option>
+										<option value="Dark Side">Dark Side || Empire</option>
+										<option value="Dark Side">Dark Side || First Order</option>
+										<option value="Unafilliated">Unafilliated</option>
+							    </select>
+							    <!-- <label>Select Affiliation</label> -->
+						  	</div>
+								<div class="input-field col l5 s10 offset-s1">
+							    <select id="char_category">
+							      <option value="" disabled selected>Choose category</option>
+										<option value="jedi">Jedi</option>
+										<option value="droid">Droid</option>
+										<option value="dark-side-empire">Dark Side || Empire</option>
+										<option value="dark-side-first-order">Dark Side || First Order</option>
+										<option value="unafilliated">Unafilliated</option>
+							    </select>
+						  	</div>
+								<div class="col s1"></div>
+							</div>
+							<div class="row">
+								<div class="col s1"></div>
+								<div class="col s10">
+									<div class="row">
+										<div class="input-field col s4">
+											<input id="char_hp" type="number" class="validate">
+											<label for="character_name">HP</label>
+										</div>
+										<div class="input-field col s4">
+											<input id="char_attack" type="number" class="validate">
+											<label for="character_name">Attack</label>
+										</div>
+										<div class="input-field col s4">
+											<input id="char_speed" type="number" class="validate">
+											<label for="character_name">Speed</label>
+										</div>
+									</div>
+								</div>
+								<div class="col s1"></div>
+
+							</div>
+							<div class="row">
+								<div class="input-field col s10 l6 offset-s1 offset-l3">
+									<input id="char_location" type="text" class="validate">
+			          	<label for="character_name">Location or Home Planet</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s10 l6 offset-s1 offset-l3">
+									<input id="char_image" type="text" class="validate">
+			          	<label for="character_name">Image URL</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="button-center">
+									<button id="submit-modal-form" class="btn waves-effect waves-light" type="submit" name="action">Add
+	    							<i class="material-icons right">playlist_add</i>
+	  							</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>

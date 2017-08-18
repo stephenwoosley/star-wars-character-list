@@ -24,9 +24,9 @@ Categories      Most Popular Characters(20)     Featured/Recently Added
 
 ### New ToDos
 
-1. Create handlebars layout with index & partials
-2. Start on SQL or Mongo db or firebase
-3. Set up Express routes
-4. Tie it all together
+1. Create handlebars layout with index & partials - DONE
+2. Start on SQL or Mongo db or firebase - SQL - DONE
+3. Set up Express - DONE
+4. CRUD working 
 5. Implement Search Feature
 6. Import Star Wars Databank data

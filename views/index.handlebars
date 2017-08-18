@@ -1,0 +1,22 @@
+
+{{> header/header}}
+
+<div class="container">
+    
+    {{> modal/modal}}
+    {{> body/body}}
+</div>
+<ul>
+    {{#each characters}}
+        <li>
+            <p>Name:{{this.ch_name}}</p>
+            <p>Affiliation:{{this.affiliation}}</p>
+            <p>Category:{{this.category}}</p>
+            <p>HP:{{this.hp}}</p>
+            <p>Attack:{{this.attack}}</p>
+            <p>Speed:{{this.ch_name}}</p>
+            <p>Location:{{this.location}}</p>
+            <p>Image:<img src={{this.imageURL}}></p>
+        </li>
+    {{/each}}
+</ul>
