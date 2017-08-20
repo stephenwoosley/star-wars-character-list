@@ -61,17 +61,17 @@ $("#submit-modal-form").on("click", function(event){
     </div>\
   </div>";
 
+  $("#char_name").val(""),
+  $("#char_affiliation").val("");
+  $("#char_category").val("");
+  $("#char_hp").val("");
+  $("#char_attack").val("");
+  $("#char_speed").val("");
+  $("#char_location").val("");
+  $("#char_image").val("");
+
   characterWell.append(characterCardHTML);
 });
-
-$("#char_name").val(""),
-$("#char_affiliation").val("");
-$("#char_category").val("");
-$("#char_hp").val("");
-$("#char_attack").val("");
-$("#char_speed").val("");
-$("#char_location").val("");
-$("#char_image").val("");
 
 
 //var categoryCardHTML = "<div>\
